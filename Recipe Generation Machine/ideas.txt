@@ -1,0 +1,12 @@
+1) Add Recipes
+	a) ingredients
+	b) steps
+	c) cook times 
+	d) tags
+2) View Recipes by name
+3) View Recipes by ingredient
+4) View Recipes by tag
+
+
+For the "find" we can get all the recipe ID's that match and add them to unique lists
+Then compare the lists and see which ones show up in the most
