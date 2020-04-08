@@ -6,9 +6,31 @@
         xmlns:local="clr-namespace:Recipe_Generation_Machine"
         mc:Ignorable="d"
         Title="Home" Height="450" Width="800">
+    <Window.Resources>
+        <ControlTemplate x:Key="BackButton" TargetType="Frame">
+            <DockPanel Margin="7">
+                <StackPanel
+                    Margin="7"
+                    Orientation="Horizontal"
+                    DockPanel.Dock="Top"
+                    >
+                    <Button
+                        Content="\"
+                        Command="{x:Static NavigationCommands.BrowseBack}"
+                        IsEnabled="{TemplateBinding CanGoBack}"
+                        />
+                    <Button
+                        Content="->"
+                        Command="{x:Static NavigationCommands.BrowseForward}"
+                        IsEnabled="{TemplateBinding CanGoForward}"
+                        />
+                </StackPanel>
+            </DockPanel>
+        </ControlTemplate>
+    </Window.Resources>
     <Grid>
-
         <TextBlock x:Name="copyright" HorizontalAlignment="Center" Margin="0,0,0,5" TextWrapping="Wrap" Text="Copyright 2020, Dallin Stone" VerticalAlignment="Bottom"/>
-        <Frame x:Name="mainFrame" Content="" HorizontalAlignment="Left" Height="383" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Initialized="MainFrame_Initialized"/>
+        <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden" Content="" HorizontalAlignment="Left" Height="383" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Initialized="MainFrame_Initialized"
+               />
     </Grid>
 </Window>

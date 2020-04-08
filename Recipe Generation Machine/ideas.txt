@@ -10,3 +10,6 @@
 
 For the "find" we can get all the recipe ID's that match and add them to unique lists
 Then compare the lists and see which ones show up in the most
+
+On creating a recipe, it's checking for a matching name. Maybe we can do something to find a similar recipe 
+instead of exactlty the same later on

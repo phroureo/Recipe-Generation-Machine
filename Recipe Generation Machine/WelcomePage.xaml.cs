@@ -23,13 +23,18 @@ namespace Recipe_Generation_Machine
         public WelcomePage()
         {
             InitializeComponent();
+            int recipeID;
         }
 
 
-        private void FindRecipe_Click(object sender, RoutedEventArgs e)
+        private void findRecipe_Click(object sender, RoutedEventArgs e)
         {
-            FindRecipeStart frs = new FindRecipeStart();
-             frs.Show
+            NavigationService.Navigate(new Uri("FindStart.xaml", UriKind.Relative));
+        }
+
+        private void addRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("CreateStart.xaml", UriKind.Relative));
         }
     }
 }

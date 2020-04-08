@@ -9,8 +9,8 @@
       Title="WelcomePage">
 
     <Grid>
-        <Button x:Name="findRecipe" Content="Find Recipe" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Center" Width="260" RenderTransformOrigin="-2.12,1.55" Height="40"/>
-        <Button x:Name="addRecipe" Content="Add New Recipe" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Center" Width="260" RenderTransformOrigin="-2.12,1.55" Height="40"/>
+        <Button x:Name="findRecipe" Content="Find Recipe" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Center" Width="260" RenderTransformOrigin="-2.12,1.55" Height="40" Click="findRecipe_Click"/>
+        <Button x:Name="addRecipe" Content="Add New Recipe" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Center" Width="260" RenderTransformOrigin="-2.12,1.55" Height="40" Click="addRecipe_Click"/>
         <TextBlock x:Name="welcome" HorizontalAlignment="Center" Margin="0,0,0,150" TextWrapping="Wrap" Text="Welcome to the Recipe Saving Engine" VerticalAlignment="Center" FontSize="36"/>
     </Grid>
 </Page>
